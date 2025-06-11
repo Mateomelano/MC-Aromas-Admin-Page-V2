@@ -42,6 +42,7 @@ if (!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] !== true) {
                 <li><a href="banners.php">Banners</a></li>
                 <li><a href="pedidos.php">Pedidos</a></li>
                 <li><a href="ventas.php">Ventas</a></li>
+                <li><a href="usuarios.php">Usuarios</a></li>
                 <li><a href="src/php/logout.php">
                         <button id="logout-button">Cerrar Sesión</button>
                     </a>
@@ -57,6 +58,9 @@ if (!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] !== true) {
             <table id="tabla-ventas" style="width:100%; border-collapse: collapse;">
                 <thead>
                     <tr>
+                        <th>ID</th>
+                        <th>ID Cliente</th>
+                        <th>Nombre Cliente</th>
                         <th>Fecha</th>
                         <th>Productos</th>
                         <th>Total</th>

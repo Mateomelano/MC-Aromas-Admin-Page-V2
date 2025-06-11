@@ -18,7 +18,7 @@ if (!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] !== true) {
   <!-- Estilos -->
   <link rel="stylesheet" href="build/css/app.css?v=<?php echo time(); ?>">
   <!-- JS -->
-  <script src="build/js/pedidos.js?v=<?php echo time(); ?>" defer></script>
+  <script src="build/js/usuarios.js?v=<?php echo time(); ?>" defer></script>
   <!-- FUENTE LEXEND-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,14 +49,20 @@ if (!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] !== true) {
     </nav>
   </aside>
 
-  <div class="content-pedidos">
-    <div class="notebook-container">
-      <textarea id="notebook" placeholder="Escribe tus anotaciones aquí... "></textarea>
-      <button id="copyButton">Copiar Texto</button>
-      <button id="clearButton">Limpiar Todo</button>
-      <button id="exportPDF">Descargar PDF</button>
-    </div>
-  </div>
+  <main class="content">
+    <h1>Usuarios del Sistema</h1>
+    <table id="tablaUsuarios" class="table-usuarios">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
 
 </body>
 

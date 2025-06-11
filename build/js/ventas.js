@@ -51,6 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (venta.entregado == 1) entregadas++;
 
         fila.innerHTML = `
+          <td>${venta.id}</td>
+          <td>${venta.id_usuario}</td>
+          <td>${venta.nombre_usuario}</td>
           <td>${venta.fecha}</td>
           <td>${productos}</td>
           <td>$${venta.total}</td>
